@@ -44,96 +44,100 @@ namespace FirstPlayableLauralynnTrainor
                 Console.Write(borderVertical);
                 for (int y = 0; y < mapRow.Length; y++)
                 {
-                    //if (map[y])
-                    //{
-                    //    ColorChange(ConsoleColor.Black, ConsoleColor.White);
-                    //    Console.Write(topHalf);
-                    //}
-                    //else if (map[x, y] == '~')
-                    //{
-                    //    ColorChange(ConsoleColor.Black, ConsoleColor.White);
-                    //    Console.Write(botHalf);
-                    //}
-                    //else if (map[x, y] == '>')
-                    //{
-                    //    ColorChange(ConsoleColor.Gray, ConsoleColor.Gray);
-                    //    Console.Write(solid);
-                    //}
-                    //else if (map[x, y] == '!')
-                    //{
-                    //    ColorChange(ConsoleColor.DarkGray, ConsoleColor.DarkGray);
-                    //    Console.Write(solid);
-                    //}
-                    //else if (map[x, y] == '?')
-                    //{
-                    //    ColorChange(ConsoleColor.DarkYellow, ConsoleColor.DarkYellow);
-                    //    Console.Write(solid);
-                    //}
-                    //else if (map[x, y] == '^')
-                    //{
-                    //    ColorChange(ConsoleColor.DarkYellow, ConsoleColor.Red);
-                    //    Console.Write(topHalf);
-                    //}
-                    //else if (map[x, y] == '*')
-                    //{
-                    //    ColorChange(ConsoleColor.DarkGray, ConsoleColor.Red);
-                    //    Console.Write(botHalf);
-                    //}
-                    //else if (map[x, y] == '#')
-                    //{
-                    //    ColorChange(ConsoleColor.DarkGreen, ConsoleColor.Green);
-                    //    Console.Write(grass);
-                    //}
-                    //else if (map[x, y] == '<')
-                    //{
-                    //    ColorChange(ConsoleColor.DarkGray, ConsoleColor.DarkYellow);
-                    //    Console.Write(botHalf);
-                    //}
-                    //else if (map[x, y] == '@')
-                    //{
-                    //    ColorChange(ConsoleColor.Gray, ConsoleColor.Black);
-                    //    Console.Write(topHalf);
-                    //}
-                    //else if (map[x, y] == '$')
-                    //{
-                    //    ColorChange(ConsoleColor.Gray, ConsoleColor.White);
-                    //    Console.Write(topHalf);
-                    //}
-                    //else if (map[x, y] == 'r')
-                    //{
-                    //    ColorChange(ConsoleColor.Black, ConsoleColor.Black);
-                    //    Console.Write(solid);
-                    //}
-                    //else if (map[x, y] == 'p')
-                    //{
-                    //    ColorChange(ConsoleColor.Red, ConsoleColor.Red);
-                    //    Console.Write('p');
-                    //}
-                    //else if (map[x, y] == 'b')
-                    //{
-                    //    ColorChange(ConsoleColor.DarkBlue, ConsoleColor.DarkBlue);
-                    //    Console.Write('b');
-                    //}
-                    //else if (map[x, y] == 'v')
-                    //{
-                    //    ColorChange(ConsoleColor.Magenta, ConsoleColor.Magenta);
-                    //    Console.Write('v');
-                    //}
-                    //else if (map[x, y] == 'l')
-                    //{
-                    //    ColorChange(ConsoleColor.Blue, ConsoleColor.Blue);
-                    //    Console.Write('l');
-                    //}
-                    //else if (map[x, y] == 'i')
-                    //{
-                    //    ColorChange(ConsoleColor.Black, ConsoleColor.White);
-                    //    Console.Write(roadLine);
-                    //}
-                    //else if (map[x, y] == 'f')
-                    //{
-                    //    ColorChange(ConsoleColor.DarkGreen, ConsoleColor.White);
-                    //    Console.Write(flower);
-                    //}
+                    if (map[x][y] == '`')
+                    {
+                        ColorChange(ConsoleColor.Black, ConsoleColor.White);
+                        Console.Write(topHalf);
+                    }
+                    else if (map[x][y] == '~')
+                    {
+                        ColorChange(ConsoleColor.Black, ConsoleColor.White);
+                        Console.Write(botHalf);
+                    }
+                    else if (map[x][y] == '>')
+                    {
+                        ColorChange(ConsoleColor.Gray, ConsoleColor.Gray);
+                        Console.Write(solid);
+                    }
+                    else if (map[x][y] == '!')
+                    {
+                        ColorChange(ConsoleColor.DarkGray, ConsoleColor.DarkGray);
+                        Console.Write(solid);
+                    }
+                    else if (map[x][y] == '?')
+                    {
+                        ColorChange(ConsoleColor.DarkYellow, ConsoleColor.DarkYellow);
+                        Console.Write(solid);
+                    }
+                    else if (map[x][y] == '^')
+                    {
+                        ColorChange(ConsoleColor.DarkYellow, ConsoleColor.Red);
+                        Console.Write(topHalf);
+                    }
+                    else if (map[x][y] == '*')
+                    {
+                        ColorChange(ConsoleColor.DarkGray, ConsoleColor.Red);
+                        Console.Write(botHalf);
+                    }
+                    else if (map[x][y] == '#')
+                    {
+                        ColorChange(ConsoleColor.DarkGreen, ConsoleColor.Green);
+                        Console.Write(grass);
+                    }
+                    else if (map[x][y] == '<')
+                    {
+                        ColorChange(ConsoleColor.DarkGray, ConsoleColor.DarkYellow);
+                        Console.Write(botHalf);
+                    }
+                    else if (map[x][y] == '@')
+                    {
+                        ColorChange(ConsoleColor.Gray, ConsoleColor.Black);
+                        Console.Write(topHalf);
+                    }
+                    else if (map[x][y] == '$')
+                    {
+                        ColorChange(ConsoleColor.Gray, ConsoleColor.White);
+                        Console.Write(topHalf);
+                    }
+                    else if (map[x][y] == 'r')
+                    {
+                        ColorChange(ConsoleColor.Black, ConsoleColor.Black);
+                        Console.Write(solid);
+                    }
+                    else if (map[x][y] == 'p')
+                    {
+                        ColorChange(ConsoleColor.Red, ConsoleColor.Red);
+                        Console.Write('p');
+                    }
+                    else if (map[x][y] == 'b')
+                    {
+                        ColorChange(ConsoleColor.DarkBlue, ConsoleColor.DarkBlue);
+                        Console.Write('b');
+                    }
+                    else if (map[x][y] == 'v')
+                    {
+                        ColorChange(ConsoleColor.Magenta, ConsoleColor.Magenta);
+                        Console.Write('v');
+                    }
+                    else if (map[x][y] == 'l')
+                    {
+                        ColorChange(ConsoleColor.Blue, ConsoleColor.Blue);
+                        Console.Write('l');
+                    }
+                    else if (map[x][y] == 'i')
+                    {
+                        ColorChange(ConsoleColor.Black, ConsoleColor.White);
+                        Console.Write(roadLine);
+                    }
+                    else if (map[x][y] == 'f')
+                    {
+                        ColorChange(ConsoleColor.DarkGreen, ConsoleColor.White);
+                        Console.Write(flower);
+                    }
+                    else
+                    {
+                        Console.WriteLine("error");
+                    }
                 }
                 ColorChange(ConsoleColor.Black, ConsoleColor.White);
                 Console.Write(borderVertical);
@@ -147,7 +151,7 @@ namespace FirstPlayableLauralynnTrainor
         static void DisplayBorderTop()
         {
             Console.Write(borderTL);
-            for (int i = 0; i < map.GetLength(1); i++)
+            for (int i = 0; i < map.Length; i++)
             {
                 Console.Write(borderHorizontal);
             }
@@ -158,7 +162,7 @@ namespace FirstPlayableLauralynnTrainor
         static void DisplayBorderBottom()
         {
             Console.Write(borderBL);
-            for (int i = 0; i < map.GetLength(1); i++)
+            for (int i = 0; i < map.Length; i++)
             {
                 Console.Write(borderHorizontal);
             }
